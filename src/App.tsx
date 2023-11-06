@@ -1,6 +1,28 @@
+import { Dropdown } from "./components/Dropdown";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { ImageBox } from "./components/ImageBox";
+
+const countries = [
+  "Albania",
+  "Andorra",
+  "Austria",
+  "Belarus",
+  "Belgium",
+  "Bosnia and Herzegovina",
+  "Bulgaria",
+  "Croatia",
+  "Cyprus",
+  "Czech Republic",
+  "Denmark",
+  "Estonia",
+  "Faroe Islands",
+  "Finland",
+  "France",
+  "Germany",
+  "Greece",
+  "Guernsey",
+];
 
 export const App = () => {
   return (
@@ -26,6 +48,7 @@ export const App = () => {
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam iusto reiciendis totam consequuntur, magnam sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus omnis voluptatibus hic ducimus, recusandae quas?"
         stars={4}
       />
+      <Dropdown choices={countries} />
       <Footer />
     </>
   );
